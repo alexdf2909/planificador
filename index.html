@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador</title>
+</head>
+<body>
+    <header>
+        <h1>Planificador</h1>
+    </header>
+    <main>
+        <form action="">
+            <p class="nueva-actividad">Nueva Actividad</p>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="grupo">Grupo:</label>
+            <input list="grupos" name="grupo" id="grupo">
+            <datalist id="grupos">
+                <option value="Tarea">
+                <option value="UPN">
+                <option value="Digital House">
+                <option value="Oracle">
+                <option value="Casa">
+             </datalist>
+            <button id="agregar-grupo">+</button>
+
+            <div>
+                <label for="nuevo-grupo">Nuevo grupo:</label>
+                <input type="text" name="nuevo-grupo" id="nuevo-grupo">
+            </div>
+
+            <label for="repeticion">Repetición:</label>
+
+            <input type="radio" name="repeticion" id="unico" value="unico">
+            <label for="unico">Único</label>
+
+            <input type="radio" name="repeticion" id="diario" value="diario">
+            <label for="diario">Diario</label>
+
+            <input type="radio" name="repeticion" id="personalizado" value="personalizado">
+            <label for="personalizado">Personalizado</label>
+
+            <select name="dia-personalizado" id="dia-personalizado" multiple>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+
+            <input type="checkbox" name="desplazamiento" id="desplazamiento">
+            <label for="desplazamiento">Desplazamiento</label>
+
+            <fieldset class="con-desplazamiento">
+
+                <select name="donde-desplazamiento" id="donde-desplazamiento">
+                    <option value="inicio">Inicio</option>
+                    <option value="final">Final</option>
+                    <option value="ambos">Ambos</option>
+                </select>
+
+                <label for="desplazamiento-inicio">Duración desplazamiento inicio:</label>
+                <input type="time" name="desplazamiento-inicio" id="desplazamiento-inicio">
+                    
+                <label for="desplazamiento-final">Duración desplazamiento final:</label>
+                <input type="time" name="desplazamiento-final" id="desplazamiento-final">
+            
+            </fieldset>
+
+            <label for="actividad-color">Color:</label>
+            <input type="color" name="actividad-color" id="actividad-color">
+
+            <input type="checkbox" name="fijo" id="fijo" checked>
+            <label for="fijo">Fijo</label>
+
+            <fieldset class="con-fijo">
+
+                <label for="fijo-inicio">Hora de inicio:</label>
+                <input type="time" name="fijo-inicio" id="fijo-inicio">
+                    
+                <label for="fijo-final">Hora de fin:</label>
+                <input type="time" name="fijo-final" id="fijo-final">
+
+            </fieldset>
+
+            <fieldset class="sin-fijo">
+
+                <label for="tiempo-duracion">Tiempo de duración:</label>
+                <input type="time" name="tiempo-duracion" id="tiempo-duracion">
+                    
+                <input type="checkbox" name="dividir" id="dividir">
+                <label for="dividir">Dividir</label>
+
+                <input type="checkbox" name="limite" id="limite">
+                <label for="limite">Limite</label>
+                <input type="datetime-local" name="dia-limite" id="dia-limite">
+
+                <label for="antecedente">Antecedente:</label>
+                <input list="antecedentes" name="antecedente" id="antecedente">
+                <datalist id="antecedentes">
+                    <option value="Ninguno">
+                </datalist>
+
+            </fieldset>
+
+            <button id="btn-cancelar">Cancelar</button>
+            <button id="btn-crear-actividad">Crear Actividad</button>
+        </form>
+    </main>
+</body>
+</html>
