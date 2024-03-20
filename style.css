@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    background: #2D3250;
+    color: #e3e2e2;
+}
+
+.calendario{
+    width: 70%;
+}
+    
+.calendario .meses{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.calendario .dias-semana{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.calendario .dias-semana p{
+    width: 14%;
+    text-align: center;
+}
+.calendario .semana{
+    background: #2D3250;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.calendario .dia{
+    background: #424769;
+    height: 97%;
+    width: 14%;
+    cursor: pointer;
+}
+.calendario .fecha{
+    background: #424769;
+    font-size: 16px;
+}
